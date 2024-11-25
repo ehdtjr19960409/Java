@@ -1,5 +1,5 @@
 package typeCasting;
-
+//11번 : 강제 형변환
 public class TypeCasting01 {
 	public static void main(String[] args) {
 		// 형 변환 연산자 (자료형)을 사용하여 강제 형변환을 한다
