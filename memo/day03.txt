@@ -211,15 +211,125 @@ RAM
 	char		%c		character(문자)
 	String		%s		String(문자열)
 
+4) 서식문자의 옵션
+	%[- or 0][n][.m] 서식문자
+	-	왼쪽 정렬
+	0	비어있는 공간을 0으로 채움(int, double만 가능)
+	n	자리수
+	.m	소숫점 아래 자리수 / 문자열 자르기
 
 
+7.형변환(Type Casting)
+	하나의 자료형을 다른 자료형으로 변환하는 과정을 의미한다
+	강제 형변환과 자동 형변환 두가지 방식이 있다
+
+1) 강제 형변환
+	(자료형) 값
+	
+	큰 자료형을 작은 자료형으로 변환할 때 사용된다
+	데이터 손실이 발생할 수 있다
+	Ex 손실 발생 예시) double -> int , long -> int
+	
+- 실수 -> 정수		소수점 이하의 값이 버려짐(반올림 되지 않는다)
+- 큰 정수 -> 작은 정수	데이터 손실 또는 값 왜곡 발생가능성있음
+- 문자 -> 정수		문자를 정수(유니코드 값)으로 변환
+- 정수 -> 문자		정수를 문자코드 값으로 변환
+
+2) 자동형변환
+	작은 크기의 자료형을 큰 크기의 자료형으로 변환할 때 컴파일러가 자동으로 수행한다
+	데이터 손실이 없기 때문에 안전하게 변환할 수 있다
+	명시적으로 형변환 연산 자를 사용하지 않아도 된다
+	
+- 작은 자료형에서 큰 자료형으로 변환
+- 연산 시 형변환이 이루어질 때 자동변환(더 큰 자료형으로 자동변환)
+- 문자형(char)에서 정수형(int)로 변환
+- 정수형 값을 실수로 변환
 
 
+3) 문자열 형변환
+- 다른 자료형을 문자열로 변환 
+	문자열과 다른 자료형을 연결(+)하면 결과는 항상 문자열이 된다
+
+- 문자열을 다른 자료형으로 변환
+	기본 자료형은 기본자료형끼리만 형변환이 가능하다
+	String 클래스 타입(레퍼런스 타입)
+
+	모든 기본 자료형을 담고있는 클래스 타입이 있고 String 다른 자료형으로 변환시키는 이 클래스타입의 도움을 받는다
+	int -> Inteeger
+	long -> Long
+	double -> Double
+	float -> Float
+	char -> Character
+	boolean -> Boolean
+		
+	String data1 = '10';
+	String data1 = "abc";
+	int result = Integer.parseInt(data1);
+	long result2 = Long.parseLong(data1);
+	double result3 = Double.parseDouble(data1); //10.0
+	char result4 = "abc".charAt(1);
+	//Ex) char result4 = "abc".charAt(index 번호); //index 방번호는 0부터 시작 배열형태
+	
+-----------------------------------------------------------------------------------
+복습
+
+	변수 : 값을 저장하는 공간
+		자료형 변수명 = 값;	//소문자로 시작, 단어가 바뀔 때 대문자로 변수명 작성
+	상수 : 항상 같은 값을 갖는 값
+		final 자료형 상수명 = 값; //대문자와 _로 상수명 작성
+		
+
+	
+	자료형
+		정수형	int(4byte), long(8byte)
+		실수형	float(4byte), double(8byte)
+		논리형	boolean(1byte) 	=> true, false
+		문자형	char(2byte)	=> 'a'
+		문자열	String(?)	=> ""
+
+	출력 메소드
+		println()
+		print()
+		printf()	
+	
+		형식지정자 : %d, %o, %x, %s, %c %f
+		%[- or 0][n][.m] 형식지정자
+
+	이스케이프 문자
+		\n, \t, \", \', \\
 
 
+	형변환	
+		자동형변환
+		- 작은 타입의 값을 큰 타입의 저장공간에 저장 가능하다
+			int -> double
+			int -> long
+			float -> double	
+			char -> int 문자코드와 관련있다
+			정수 + 실수 => 실수형으로 자동변환
+			정수 + 정수 => 정수형으로 자동변환	
+		
+		강제 형변환
+		- 큰 타입의 값을 작은 타입의 저장공간에 저장
+			double -> float		(float) 값 사용
+			double -> int 		(int) 값 사용
+			long -> int		
+	
 
-
-
+		다른 타입 -> 문자열로 형변환
+			값 + ""
+	
+		문자열 값 -> 다른 타입 형변환
+			클래스 타입을 이용한다
+			int -> Integer
+			double -> Double
+			boolean -> Boolean
+			char -> Character
+			long -> Long
+			float -> Float
+	
+		- 인덱스번호 : 문자열의 방 번호, 0부터 시작한다
+	
 
 
 

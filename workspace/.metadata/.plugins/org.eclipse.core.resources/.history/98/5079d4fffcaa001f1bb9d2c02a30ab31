@@ -1,0 +1,15 @@
+package typeCasting;
+//13번 : 문자열 자료형의 형변환
+public class TypeCasting03 {
+	public static void main(String[] args) {
+		//문자열 => 다른자료형으로 형변환
+		String data1 = "10";
+		String data2 = "abc";
+		System.out.println(data1 +1);
+		System.out.println(data2);
+		int result = Integer.parseInt(data1);
+		long result2 = Long.parseLong(data1);
+		double result3 = Double.parseDouble(data1); //10.0
+		char result4 = "abc".charAt(1);
+	}
+}

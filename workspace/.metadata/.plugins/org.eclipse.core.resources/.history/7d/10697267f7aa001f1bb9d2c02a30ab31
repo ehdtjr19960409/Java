@@ -1,0 +1,20 @@
+package typeCasting;
+//12번 : 자동 형변환
+public class TypeCasting02 {
+	public static void main(String[] args) {
+		
+		//1) 작은 자료형에서 큰 자료형으로 변환
+		// int -> long
+		int inVal = 100;
+		long result = inVal;
+		System.out.println(result);
+		
+		//int -> float
+		float result2 = inVal;
+		System.out.println(result2);
+		
+		
+		
+	}
+	
+}
