@@ -1,0 +1,29 @@
+package variable;
+//1번
+
+
+public class Variable01 {
+
+	public static void main(String[] args) {
+		//변수 선언
+		//자료형 변수명;
+		int number1;
+		boolean isTrue;
+		double number2;
+		
+		// 변수의 값을 저장해야 사용 가능하다(변수를 선언 후 반드시 값을 저장해야한다!)
+		// 변수명 = 값;
+		number1 = 10;
+		number2 = 10.5;
+		isTrue = true;
+		
+		
+		
+		System.out.println(10);
+		System.out.println(number1);
+		System.out.println(number2);
+		System.out.println(isTrue);
+		
+	}
+
+}

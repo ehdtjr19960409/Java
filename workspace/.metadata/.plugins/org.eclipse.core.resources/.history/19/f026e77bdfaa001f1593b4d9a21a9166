@@ -1,0 +1,7 @@
+package print;
+//7번 : 출력메소드(println, print)
+public class printTest01 {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,22 @@
+package variable;
+
+public class Variable02 {
+
+	public static void main(String[] args) {
+//		문자부터 시작한다
+//		int 1num = 10; 숫자부터 시작시 오류발생
+		int nu1m = 10;
+		int num1 = 10;
+		
+//		특수문자를 쓸 수 없다(단, _와 $는 가능)
+//		int @#$% = 10;
+		int _a = 10;
+		int $ab_ = 10;
+	
+		
+		
+//		공백을 사용할 수 없다(공백 대신 _와 camel표기법, snake 표기법 등을 활용한다)
+//		예약어(키워드)를 사용할 수 없다
+	}
+
+}
