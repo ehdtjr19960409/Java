@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exam02 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);
 //		공백(0100)  
 //		
 //		문제 1. 사용자가 입력한 숫자까지 구구단을 출력하는 프로그램
@@ -28,24 +28,19 @@ public class Exam02 {
 //			}	
 //		}
 		
-		int input = 0;
-		System.out.print("출력받을 변수 : ");
-		input = sc.nextInt();
-			for(int i = 1; i<=9; i++) {
-				//입력받은 행이 반복된다
-				for(int j = 1; j<= input; j++) {
-					int result = i * j; 
-					System.out.printf("%d * %d = %d \t", j, i, result );
-					
-				}
-				System.out.println();
-			}
-			
-		
-		
-//		
-//		
-		
+//		int input = 0;
+//		System.out.print("출력받을 변수 : ");
+//		input = sc.nextInt();
+//			for(int i = 1; i<=9; i++) {
+//				//입력받은 행이 반복된다
+//				for(int j = 1; j<= input; j++) {
+//					int result = i * j; 
+//					System.out.printf("%d * %d = %d \t", j, i, result );
+//					
+//				}
+//				System.out.println();
+//			}
+//				
 //		[입출력예시]
 //		구구단을 어디까지 출력할까요? : 4
 //		1 * 1 = 1   2 * 1 = 2   3 * 1 = 3   4 * 1 = 4   
@@ -65,6 +60,27 @@ public class Exam02 {
 //		   정답이 아닐 경우 "값을 다시 입력해 주세요 : " 를 출력한 후, 값을 다시 입력 받는다.
 //		   정답을 맞히면 "정답입니다 *번 째에 맞혔습니다!"를 출력하고 프로그램을 종료한다.
 //		   단, 1 ~ 50까지의 정수 범위를 벗어나면 "1 ~ 50까지의 숫자만 입력해주세요 : " 를 출력한다.
+			
+//			Scanner sc = new Scanner(System.in);	//스캐너 클래스 import
+//			final int ANSWER = 10;					// 게임의 정답을 정해놓기 위해 final로 int형 변수 지정
+//			int num = 0;							//입력값을 받기 위한 변수 선언
+//			int cnt = 0;							// 정답을 맞추기전까지 반복해야하는 n값 int형변수 선언
+//			
+//			do {									// 반복을 하기위해서는 while or do while문 활용 
+//				System.out.print("입력할 정수 : ");		// do while문 안에서 입력받아야할 출력메소드 생성
+//				num = sc.nextInt();					// 입력 메소드 생성
+//				if((num>ANSWER)) {					// if 조건문으로 입력받은 값 > 과 지정한 final 값을 비교
+//					System.out.println("down");		// 출력 메소드 down 출력 
+//				}else if(num<ANSWER){				// 다른 조건으로 입력받은 값 < 과 지정한 final 값을 비교
+//					System.out.println("up");		// 출력 메소드 up출력
+//				}else if(num == ANSWER) {			// 같을 때가 있을 수 있으므로 ==으로 조건식 진행
+//					System.out.print("정답입니다.");	// 정답을 알려주는 출력메소드 생성
+//					break;							// 정답을 맞췄으니 break로 반복문 종료
+//				}
+//				cnt++;								// 반복문이 break를 통해 종료되기 전까지 카운트값은 증감식을 통해 올라가야한다
+//			}while(!(num==ANSWER));					// while이 참이 아닌 거짓일 때 반복문이 실행
+//				System.out.printf(" %d번째에 맞혔습니다!",cnt);	// 카운트 값이 나오게끔 출력
+//		
 //
 //		---------------------------------------------------------------------------------
 //		JAV탕
@@ -81,6 +97,8 @@ public class Exam02 {
 //		    * *
 //		     *
 //
+//
+//
 //		문제2) 금액을 넣어주세요 : 입력값
 //		   메뉴 출력 1~4번까지
 //		      1 콜라 : 2500
@@ -91,7 +109,49 @@ public class Exam02 {
 //		   음료수가 나왔습니다 메시지 출력
 //		   음료수 갯수 n 개 표현
 //		   음료수 나오거나 잔액부족하면 종료시키기
+//		
+//			
+//		Scanner sc = new Scanner(System.in);						// scnaner 클래스 import하기
+//		int input1,input = 0,  charge = 0, charge1 = 0;		//입력받을 정수 2개 선언 및 거스름돈 및 n개 결과값 선언 
+//		int cola = 2500, sider = 2000, coffee = 4000;		//해당 메뉴 가격 정수형 선언
+//		
+//		System.out.print("금액을 넣어주세요 : ");					//넣을 금액 출력메소드
+//		input = sc.nextInt();								//넣을 금액 입력 메소드
 //
+//		System.out.println("		      1 콜라 : 2500\r\n"	// 메뉴 출력 메소드
+//				+ "		      2 사이다 : 2000\r\n"
+//				+ "		      3 커피 : 4000\r\n"
+//				+ "		      4 잔액반환");
+//		if(input<2000) {									//큰 if문에서 사이다가 최소값이므로 2000원보다 작으면 잔액부족 출력
+//			System.out.println("잔액부족");
+//		}else if(input>2000) {
+//			System.out.print("번호 선택 : ");					//else if에서 사이다가 최소값이므로 2000원보다 크면 번호선택 출력메소드
+//			input1 = sc.nextInt();							//번호 선택할 입력메소드
+//			if(input1==1) {									// else if문 안에 if 조건문을 통해 이중조건문 만들고 1과 입력한 숫자 비교
+//				charge = input % cola;						// 입력한 금액과 콜라 값을 나머지를 통해 잔돈 산술
+//				charge1 = input/cola;						// 입력한 금액과 콜라 값을 나누기를 통해 n개 산술
+//				System.out.printf("콜라가 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge); //산술한 결과값에 맞게 n개와 거스름돈 출력메소드
+//			}else if(input1==2) {
+//				charge = input % sider;
+//				charge1 = input/sider;
+//				System.out.printf("사이다 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
+//			}else if(input1==3) {
+//				charge = input % coffee;
+//				charge1 = input/coffee;
+//				System.out.printf("커피 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
+//			}else if(input1==4) {							//입력한 번호가 4와 맞다면 초기 입력값을 출력 메소드
+//				System.out.printf("잔액반환 :%d ", input);
+//			}
+//		}
+//		
+		
+		
+//		if((0>=input1&&input1>5)&&input<2000) {
+//			System.out.println("잔액부족");
+//		}else if((input1>0&&input1<5)&&input>sider) {
+			
+//		}
+//			
 //		---------------------------------------------------------------
 //		JAVA요
 //		문제 1 : 점심 선택 및 가격 확인
@@ -100,11 +160,76 @@ public class Exam02 {
 //		      짜장 (5000원), 돈까스 (8000원), 피자 (25000원), 햄버거 (6000원)
 //		   - 올바른 메뉴를 입력할 때까지 반복합니다.
 //		   - 잘못된 메뉴를 입력하면 다시 입력받습니다.
+		// 설명코드
+		// 먼저 Scanner 클래스를 import한다
+		// 각 정수형 변수에 가격을 대입과 동시에 초기화한다.
+		// 문자열을 입력 받으려면 String 타입을 선언하고 초기화한다.
+		// 점심메뉴를 출력 메소드를 활용해서 보여준다.
+		// 입력 메소드를 활용
+		// if문을 활용하고 조건식에는 equals를 사용
+		// 해당 문자열이 같을 시 가격을 보여주고 아닐 시,재입력을 통해 진행한다
+		//
+		// + while 문 조건식을 넣었을 때 (위 문자열 타입과 비교하고 논리연산 OR을 활용하고 거짓일 때 반복하기 위해 ! 부정을 사용)
+		// 출력 메소드 생성을 통해 재입력이란 것을 알려줘야한다
+		// 입력 메소드를 통해 재입력을 받는다
+
+//		Scanner sc = new Scanner(System.in);
+//		int food1 = 5000;
+//		int food2 = 8000;
+//		int food3 = 25000;
+//		int food4 = 6000;
+//		String menu = null;
+//
+//		System.out.println("점심 메뉴 : 짜장, 돈까스, 피자, 햄버거");
+//		menu = sc.next(); // 김치
+//
+//		while (!("짜장".equals(menu) || "돈까스".equals(menu) || "피자".equals(menu) || "햄버거".equals(menu))) { // 거짓일시 재입력을
+//																										// 실행시키위한 논리연산
+//																										// 진행
+//			System.out.println("재입력 : ");
+//			menu = sc.next();
+//		}
+//		if ("짜장".equals(menu)) {
+//			System.out.println(menu + ":" + food1);
+//		} else if ("돈까스".equals(menu)) {
+//			System.out.println(menu + ":" + food2);
+//		} else if ("피자".equals(menu)) {
+//			System.out.println(menu + ":" + food3);
+//		} else if ("햄버거".equals(menu)) {
+//			System.out.println(menu + ":" + food4);
+//		}
+//		System.out.println("메뉴가 정상적으로 선택됐었습니다.");
+		
 //
 //		문제 2 : 문자의 아스키코드 값 확인
 //		   사용자로부터 문자를 입력받아 아스키코드 값을 확인하고 입력받은 문자를 아스키코드 값으로 변환한다
 //		   사용자가 입력한 문자와 그 아스키코드를 출력하는데 반복문을 사용하여 여러번 입력받도록 한다
 //		   'A'를 입력하면 종료하고 종료 메시지를 출력한다
+		// 먼저 Scanner 클래스를 import한다
+				// A라는 문자를 입력 받으면 종료를 하고 싶어 출력 메시지로 A의 아스키코드인 65를 미리 알려준다
+				// 출력 메시지를 통해 알고싶은 문자를 입력 해달라고 한다
+				// scanner를 통해 사용자로부터 원하는 문자를 입력받는다
+				// 입력받는 문자를 아스키코드로 변환
+				// 변환받은 값을 출력해 주고
+				// 반복문을 사용해 사용자에게 다시 문자를 입력 받을 수 있게 출력메시지와 scanner를 통해 입력을 받음 물론 A를 입력 받으면 실행 종료
+				// 사용자가 A라는 문자를 입력하지 않으면 반복문을 통해 계속 자신이 알고싶어하는 문자의 아스키코드를 알 수 있음.
+				// 이제 사용자가 A라는 문자를 통해 반복문을 탈출했다면 출력메시지를 통해 입력이 끝났다는 것 을 출력
+
+//			      Scanner sc = new Scanner(System.in);
+//				System.out.println("A의 아스키코드는 65입니다");
+//				System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
+//				String ch1 = sc.next();
+//				char ch2 = ch1.charAt(0);
+//				int num1 = (int) ch2;
+//
+//				while (ch2 != 'A') {
+//					System.out.println("입력하신 문자" + ch2 + "의 아스키 코드는 : " + num1);
+//					System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
+//					ch1 = sc.next();
+//					ch2 = ch1.charAt(0);
+//					num1 = (int) ch2;
+//		
+		
 //
 //		---------------------------------------------------------------
 //		I팀
@@ -169,6 +294,9 @@ public class Exam02 {
 //
 //		(1번문제를 틀린인 경우)
 //		1번문제를 틀린경우 틀렸습니다. 출력 후 프로그램 종료(다음문제로 넘어가지 않음)
+		
+		
+		
 
 		// 2번 문제 로직
 		// Scanner 클래스 생성 import
@@ -210,7 +338,28 @@ public class Exam02 {
 //		            l l l l l 
 //		            l l l l l 
 //		            l l l l l
-//
+		
+//			Scanner sc = new Scanner(System.in);		//스캐너 클래스 import
+//			String name = ""; 							//입력받을 변수 		
+//			char name1 = ' ';							//문자열로 변환할 변수
+//			int num =0;									//정수로 변환할 변수
+//			
+//			System.out.print("문자열(3문자 이상) 입력: ");	// 출력 메소드
+//			name = sc.next();							// 입력메소드
+//			name1 = name.charAt(2);						// 입력받은 문자열 name 변수에서 3번째 위치한 것을 문자로 형변환시켜 그 값을 name1에 넣는다
+//			num= (int)name1;							//	문자형변환 것을 int형으로 강제 형변환을 시켜 num 값에 넣는다
+//																	
+//			for(int i=0; i<5; i++) {  					// for문1 통해 행(위에서 아래로)에 5개가 나와하므로 i=0; i<5; i++ 조건식을 기입
+//			
+//				for(int j=0; j<5; j++) {				// for문2 열(왼쪽에서 오른쪽)이 5개가 나와야하므로 j=0; j<5; j++ 조건식을 기입
+//					System.out.printf(name1 + " ");		// 출력할 것은 3번째에 위치한 문자이기 때문에 name1변수에 들어있는 문자를 활용
+//				}
+//				System.out.println();					// for문2 첫번째 열이 끝났으면 줄바꿈으로 바꿔주면서 5번 반복
+//			}
+//			System.out.println();						// for문1 첫번쨰 행이 끝났으면 줄바꿈으로 바꿔주면서 5번 반복
+//			sc.nextLine();
+//			sc.close();
+		
 //		1-2(심화) 문자 추출 사각형 생성
 //		      문자열(3문자 이상)을 받아온다
 //		      문자열에서 3번재 위치한 문자로 5*5 크기의 가운데가 비어있는 사각형을 출력한다
