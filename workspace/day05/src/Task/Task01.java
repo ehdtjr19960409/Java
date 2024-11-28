@@ -110,11 +110,11 @@ public class Task01 {
 	   
 	   
 //	   resultMiddle = 조건식? 참: 거짓; 
-	   
+//	   resultMiddle = ((num01 < num02 && num01 < num03 && num02 < num03)? num01: num03); 
 	   resultSmall = (num01 < num02 && num01 < num03) ? num01 : num02 < num03  ? num02 :num03 ;
 	  
-	   System.out.println("출력 : " + resultSmall +  resultMiddle +  resultBig);
-	   
+//	   System.out.println("출력 : " + resultSmall +  resultMiddle +  resultBig);
+//	   System.out.println(resultMiddle);
 //      5. 사용자로부터 문자열을 입력받고 "X"만 입력했을 경우에만 종료 메시지를 출력하고 그 외에는 입력한 문자열을 출력하기
 //			// String 변수 선언
 	   		// String 입력 메소드 생성

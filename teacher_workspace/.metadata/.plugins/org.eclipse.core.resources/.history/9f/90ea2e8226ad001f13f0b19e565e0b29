@@ -1,0 +1,54 @@
+package doWhileTest;
+
+//1번 : do~while문
+public class DoWhileTest {
+	public static void main(String[] args) {
+
+		boolean isFalse = false;
+
+		// while문
+//		while(isFalse) {
+//			System.out.println("안녕");
+//		}
+//		
+//		System.out.println("출력 끝");
+
+//		//do ~ while문
+//		do {
+//			System.out.println("안녕");
+//		}while(isFalse);
+//		
+//		System.out.println("출력 끝");
+		for (int i = 1; i < 3; i++) {
+			//바깥for문의 영역
+			for (int j = 1; j < 3; j++) {
+				System.out.print(" i = " + i + ", j = " + j);
+			}
+			//바깥for문 영역
+			System.out.println();
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
