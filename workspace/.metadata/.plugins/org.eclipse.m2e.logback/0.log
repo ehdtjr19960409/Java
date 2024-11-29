@@ -69,3 +69,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration Test references non
 	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob$1.run(SmartImportJob.java:223)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 2024-11-28 18:51:38,315 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-29 08:50:18,979 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
