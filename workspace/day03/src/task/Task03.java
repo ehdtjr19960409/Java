@@ -15,6 +15,9 @@ public class Task03 {
 		System.out.println(result1);
 		System.out.println(result2);
 		System.out.print(result4 + "\n");
+		
+		// int(4byte) 이므로 long, double, float, charㄹ 강제형변환 가능
+		// 단, boolean 논리형은 불가
 
 		// 2. 정수(long) -> 모든 자료형 강제형변환 가능여부 확인
 		long num1 = 34L;
@@ -28,6 +31,9 @@ public class Task03 {
 		System.out.println(result6);
 		System.out.println(result7);
 		System.out.println(result9);
+		
+		// long(8byte) 이므로 int(4byte) 강제 형변환 가능, double, char 가능
+		// boolean 논리형 불가
 
 		// 3. 실수(double) -> 모든 자료형 강제형변환 가능여부 확인
 		double num2 = 45.453;
@@ -41,6 +47,10 @@ public class Task03 {
 		System.out.println(result11);
 		System.out.println(result12);
 		System.out.println(result14);
+		
+		// double(8byte) 이므로 int, long, float, char 강제형변환 가능
+		// boolean 논리형 불가
+
 
 		// 4. 실수(float) -> 모든 자료형 강제형변환 가능여부 확인
 		float num3 = 21.12f;
@@ -50,6 +60,9 @@ public class Task03 {
 		// boolean result18 = (boolean)num3;
 		char result19 = (char) num3;
 
+		// float(4byte) 이므로 int, long, double, char 강제형변환 가능
+		// boolean 논리형 불가
+		
 		// 5. 논리형 (boolean) -> 모든 자료형 강제형변환 가능여부 확인
 //      boolean isTrue = false;
 //      int result20 = (int)isTrue;
@@ -58,6 +71,8 @@ public class Task03 {
 //      float result23 = (float)isTrue;
 //      char result24 =(char)isTrue;
 
+		//논리형은 전체 불가하다
+		
 		// 6. 문자형(char) -> 모든 자료형 강제형변환 가능여부 확인
 		char text = 'c';
 		int result20 = (int)text;
@@ -65,6 +80,7 @@ public class Task03 {
 		double result22 = (double)text;
 		float result23 = (float)text;
 		
+		//문자를 아스키코드 값으로 표기해서 강제형변화으로 값으로 변경된다
 
 	}
 }

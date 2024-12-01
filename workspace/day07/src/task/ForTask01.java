@@ -49,25 +49,42 @@ public class ForTask01 {
     	  char english = (char) i; 
     	  System.out.print(english);
     	  
-      } 
+      }System.out.println(); 
       
       //3. aBcDeFgHiJkLmNoPqRsTuVwXyZ 출력
       int i = 0; // CHAR 정수 형변환
+      // a부터 z까지 26개의 문자이다 
+      // for문 범위는 0부터 25까지이다
+      // if문 i가 짝수일 때 2로 나눠서 나머지가 0이면
+      // i 에 65를 더하고 문자형으로 강제형 변환
+      // else문 i에 97를 더해 강제형변환
       
-      // 대문자일 때는 범위가 65부터 90이고, 소문자일 때는 97부터 122이다,for문을 통해 범위 설정
-      // 소문자 대문자 구분은 짝수와 홀수의 방식이므로 if(if%2==1)홀수, else if(if%2==0)짝수
-      // 
-      // 
-      // }
-     
-//      for 1개 97 <=~  <=121 ()
-//      	if(if%2==1)
-//      for 1개  65~ 90 
-//      	if(if%2==0)
-//      
+      for(int j = 0; j < 26 ; j++) {
+    	  if(j%2==0) {
+    		  System.out.print((char) (j+97));
+    	  }else {
+    		  System.out.print((char) (j+65));
+    	  }
+    	  
+      }
+      System.out.println();
+ 
+      
       //4.1) 1부터 100까지 숫자 중 3의 배수 또는 5의 배수만 한 줄에 5개씩 띄어쓰기로 구분되도록 출력
       //   2) 3의 배수 또는 5의 배수 숫자들의 합을 구하기
       
+      //1부터 100까지이므로 for문
+      // if문으로 3의 배수 || 5의 배수 조건식
+      //	if문 12로 떨어질 때 줄바꿈
+      // 숫자 간격 조정하기 위해 syso (i+" " )
+      for(int k = 1;k<=100;k++) {
+    	  if(k%3==0 || k%5==0) {
+    		  if(k%12==0) {
+    			  System.out.println();
+    		  }
+    		  System.out.print(k+" ");
+    	  }
+      }
       //교재 P.143까지 해석해보기
       
    }

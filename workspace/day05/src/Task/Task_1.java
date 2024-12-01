@@ -12,7 +12,7 @@ public class Task_1 {
 	   // 삼항연산자을 활용한 큰 값을 결과 변수에 넣기
 	   // 삼항연산자을 활용한 중간 값을 결과 변수에 넣기
 	   // 삼항연산자을 활용한 작은 값을 결과 변수에 넣기
-	   // 
+	   // 	   삼항연산자 = 조건식? 참: 거짓; 
 	   // 출력메소드에서 입력값에 따라 작은것에서 큰 순서로 정렬 출력
 	   Scanner sc = new Scanner(System.in);
 	   int num01, num02, num03, resultBig, resultMiddle, resultSmall =0;
@@ -22,13 +22,9 @@ public class Task_1 {
 	   num03=sc.nextInt();
 	   
 	   resultBig = (num01 > num02 && num01 > num03) ? num01 : num02 > num03 ? num02 :num03 ;
-	   
-	   
-//	   resultMiddle = 조건식? 참: 거짓; 
-
-	   resultSmall = (num01 < num02 && num01 < num03) ? num01 : num02 < num03  ? num02 :num03 ;
 	   resultMiddle = ((num01 != resultSmall) && (num01 != resultBig)) ? num01 : ((num02 != resultSmall) && (num02 != resultBig)) ? num02:num03;
-//			   
+	   resultSmall = (num01 < num02 && num01 < num03) ? num01 : num02 < num03  ? num02 :num03 ;
+	   		   
 	  System.out.println("출력 : " + resultSmall+ " " + resultMiddle + " " + resultBig);
 
 
