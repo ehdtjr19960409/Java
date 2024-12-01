@@ -28,18 +28,18 @@ public class Exam02 {
 ////			}	
 ////		}
 //		
-//		int input100 = 0;
-//		System.out.print("출력받을 변수 : ");
-//		input100 = sc.nextInt();
-//			for(int i = 1; i<=9; i++) {
-//				//입력받은 행이 반복된다
-//				for(int j = 1; j<= input100; j++) {
-//					int result = i * j; 
-//					System.out.printf("%d * %d = %d \t", j, i, result );
-//					
-//				}
-//				System.out.println();
-//			}
+		int input100 = 0;
+		System.out.print("출력받을 변수 : ");
+		input100 = sc.nextInt();
+			for(int i = 1; i<=9; i++) {
+				//입력받은 행이 반복된다
+				for(int j = 1; j<= input100; j++) {
+					int result = i * j; 
+					System.out.printf("%d * %d = %d \t", j, i, result );
+					
+				}
+				System.out.println();
+			}
 ////				
 ////		[입출력예시]
 ////		구구단을 어디까지 출력할까요? : 4
@@ -79,27 +79,27 @@ public class Exam02 {
 //			// while이 참이 아닌 거짓일 때 반복문이 실행
 //			// 카운트 값이 나오게끔 출력
 //			
-////			Scanner sc = new Scanner(System.in);	
-//			final int ANSWER = 10;					
-//			int num = 0;							
-//			int cnt = 0;							
-//			
-//			do {									
-//				System.out.print("입력할 정수 : ");		
-//				num = sc.nextInt();					
-//				if((num>ANSWER)) {					
-//					System.out.println("down");		
-//				}else if(num<ANSWER){				
-//					System.out.println("up");		
-//				}else if(num == ANSWER) {			
-//					System.out.print("정답입니다.");	
-//					break;							
-//				}
-//				cnt++;								
-//			}while(!(num==ANSWER));					
-//				System.out.printf(" %d번째에 맞혔습니다!",cnt);	
-////		
-////
+			Scanner sc = new Scanner(System.in);	
+			final int ANSWER = 10;					
+			int num = 0;							
+			int cnt = 0;							
+			
+			do {									
+				System.out.print("입력할 정수 : ");		
+				num = sc.nextInt();					
+				if((num>ANSWER)) {					
+					System.out.println("down");		
+				}else if(num<ANSWER){				
+					System.out.println("up");		
+				}else if(num == ANSWER) {			
+					System.out.print("정답입니다.");	
+					break;							
+				}
+				cnt++;								
+			}while(!(num==ANSWER));					
+				System.out.printf(" %d번째에 맞혔습니다!",cnt);	
+//		
+//
 ////		---------------------------------------------------------------------------------
 ////		JAV탕
 ////		문제1) 입력한 갯수만큼 늘어나는 반칸 다이아 만들기 (입력값이 들어가야한다)
@@ -180,44 +180,44 @@ public class Exam02 {
 //			
 //			
 ////			
-////		Scanner sc = new Scanner(System.in);						
-//		int input1 = 0,input = 0,  charge = 0, charge1 = 0;		
-//		int cola = 2500, sider = 2000, coffee = 4000;		
-//		
-//		System.out.print("금액을 넣어주세요 : ");					
-//		input = sc.nextInt();								
-//
-//		System.out.println("		      1 콜라 : 2500\r\n"	// 메뉴 출력 메소드
-//				+ "		      2 사이다 : 2000\r\n"
-//				+ "		      3 커피 : 4000\r\n"
-//				+ "		      4 잔액반환");
-//		if(input<2000) {									
-//			System.out.println("잔액부족");
-//		}else if(input>2000) {
-//			System.out.print("번호 선택 : ");					
-//			input1 = sc.nextInt();							
-//			if(input1==1) {									
-//				charge = input % cola;						
-//				charge1 = input/cola;						
-//				System.out.printf("콜라가 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge); 
-//			}else if(input1==2) {
-//				charge = input % sider;
-//				charge1 = input/sider;
-//				System.out.printf("사이다 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
-//			}else if(input1==3) {
-//				charge = input % coffee;
-//				charge1 = input/coffee;
-//				System.out.printf("커피 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
-//			}else if(input1==4) {							
-//				System.out.printf("잔액반환 :%d ", input);
-//			}
-//		}
-//	
-//		if((0>=input1&&input1>5)&&input<2000) {
-//			System.out.println("잔액부족");
-//		}else if((input1>0&&input1<5)&&input>sider) {
-//			
-//		}
+		Scanner sc = new Scanner(System.in);						
+		int input1 = 0,input = 0,  charge = 0, charge1 = 0;		
+		int cola = 2500, sider = 2000, coffee = 4000;		
+		
+		System.out.print("금액을 넣어주세요 : ");					
+		input = sc.nextInt();								
+
+		System.out.println("		      1 콜라 : 2500\r\n"	// 메뉴 출력 메소드
+				+ "		      2 사이다 : 2000\r\n"
+				+ "		      3 커피 : 4000\r\n"
+				+ "		      4 잔액반환");
+		if(input<2000) {									
+			System.out.println("잔액부족");
+		}else if(input>2000) {
+			System.out.print("번호 선택 : ");					
+			input1 = sc.nextInt();							
+			if(input1==1) {									
+				charge = input % cola;						
+				charge1 = input/cola;						
+				System.out.printf("콜라가 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge); 
+			}else if(input1==2) {
+				charge = input % sider;
+				charge1 = input/sider;
+				System.out.printf("사이다 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
+			}else if(input1==3) {
+				charge = input % coffee;
+				charge1 = input/coffee;
+				System.out.printf("커피 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
+			}else if(input1==4) {							
+				System.out.printf("잔액반환 :%d ", input);
+			}
+		}
+	
+		if((0>=input1&&input1>5)&&input<2000) {
+			System.out.println("잔액부족");
+		}else if((input1>0&&input1<5)&&input>sider) {
+			
+		}
 ////			
 ////		---------------------------------------------------------------
 ////		JAVA요
@@ -241,32 +241,32 @@ public class Exam02 {
 //		// 출력 메소드 생성을 통해 재입력이란 것을 알려줘야한다
 //		// 입력 메소드를 통해 재입력을 받는다
 //
-////		Scanner sc = new Scanner(System.in);
-//		int food1 = 5000;
-//		int food2 = 8000;
-//		int food3 = 25000;
-//		int food4 = 6000;
-//		String menu = null;
-//
-//		System.out.println("점심 메뉴 : 짜장, 돈까스, 피자, 햄버거");
-//		menu = sc.next(); // 김치
-//
-//		while (!("짜장".equals(menu) || "돈까스".equals(menu) || "피자".equals(menu) || "햄버거".equals(menu))) { // 거짓일시 재입력을
-//																										// 실행시키위한 논리연산
-//																										// 진행
-//			System.out.println("재입력 : ");
-//			menu = sc.next();
-//		}
-//		if ("짜장".equals(menu)) {
-//			System.out.println(menu + ":" + food1);
-//		} else if ("돈까스".equals(menu)) {
-//			System.out.println(menu + ":" + food2);
-//		} else if ("피자".equals(menu)) {
-//			System.out.println(menu + ":" + food3);
-//		} else if ("햄버거".equals(menu)) {
-//			System.out.println(menu + ":" + food4);
-//		}
-//		System.out.println("메뉴가 정상적으로 선택됐었습니다.");
+		Scanner sc = new Scanner(System.in);
+		int food1 = 5000;
+		int food2 = 8000;
+		int food3 = 25000;
+		int food4 = 6000;
+		String menu = null;
+
+		System.out.println("점심 메뉴 : 짜장, 돈까스, 피자, 햄버거");
+		menu = sc.next(); // 김치
+
+		while (!("짜장".equals(menu) || "돈까스".equals(menu) || "피자".equals(menu) || "햄버거".equals(menu))) { // 거짓일시 재입력을
+																										// 실행시키위한 논리연산
+																										// 진행
+			System.out.println("재입력 : ");
+			menu = sc.next();
+		}
+		if ("짜장".equals(menu)) {
+			System.out.println(menu + ":" + food1);
+		} else if ("돈까스".equals(menu)) {
+			System.out.println(menu + ":" + food2);
+		} else if ("피자".equals(menu)) {
+			System.out.println(menu + ":" + food3);
+		} else if ("햄버거".equals(menu)) {
+			System.out.println(menu + ":" + food4);
+		}
+		System.out.println("메뉴가 정상적으로 선택됐었습니다.");
 //		
 ////
 ////		문제 2 : 문자의 아스키코드 값 확인
@@ -283,19 +283,19 @@ public class Exam02 {
 //				// 사용자가 A라는 문자를 입력하지 않으면 반복문을 통해 계속 자신이 알고싶어하는 문자의 아스키코드를 알 수 있음.
 //				// 이제 사용자가 A라는 문자를 통해 반복문을 탈출했다면 출력메시지를 통해 입력이 끝났다는 것 을 출력
 //
-////			      Scanner sc = new Scanner(System.in);
-//				System.out.println("A의 아스키코드는 65입니다");
-//				System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
-//				String ch1 = sc.next();
-//				char ch2 = ch1.charAt(0);
-//				int num1 = (int) ch2;
-//
-//				while (ch2 != 'A') {
-//					System.out.println("입력하신 문자" + ch2 + "의 아스키 코드는 : " + num1);
-//					System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
-//					ch1 = sc.next();
-//					ch2 = ch1.charAt(0);
-//					num1 = (int) ch2;
+//		      Scanner sc = new Scanner(System.in);
+				System.out.println("A의 아스키코드는 65입니다");
+				System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
+				String ch1 = sc.next();
+				char ch2 = ch1.charAt(0);
+				int num1 = (int) ch2;
+
+				while (ch2 != 'A') {
+					System.out.println("입력하신 문자" + ch2 + "의 아스키 코드는 : " + num1);
+					System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
+					ch1 = sc.next();
+					ch2 = ch1.charAt(0);
+					num1 = (int) ch2;
 ////		
 //		
 ////
@@ -336,24 +336,24 @@ public class Exam02 {
 //					//break문 통해 한번에맞췄기 때문에 for문 종료 후 정답입니다 출력 메소드 생성
 //					
 //					
-//		final int NUM = 27;
-//		
-//		int num2 = 0;
-//		for (int i = 0; i < 3; i++) {  
-//			System.out.print("얼마? : "); 
-//			num2 = sc.nextInt();		
-//			if (num2 == NUM) {			
-//				System.out.println("정답");	
-//				break;					
-//			} else if (num2 > NUM) {	
-//				System.out.println("다운");	
-//			} else {						
-//				System.out.println("업");
-//			}
-//		}
-//
-//
-//
+		final int NUM = 27;
+		
+		int num2 = 0;
+		for (int i = 0; i < 3; i++) {  
+			System.out.print("얼마? : "); 
+			num2 = sc.nextInt();		
+			if (num2 == NUM) {			
+				System.out.println("정답");	
+				break;					
+			} else if (num2 > NUM) {	
+				System.out.println("다운");	
+			} else {						
+				System.out.println("업");
+			}
+		}
+
+
+
 //// 		상수 27
 //// 		사용자가 15 -> 업 을 출력하고 다시 사용자에게 입력을 받음
 //// 		사용자가 50 -> 다운을 출력하고 다시 입력을 받음
@@ -385,28 +385,28 @@ public class Exam02 {
 //		// 출력메소드 2번문제
 //		// 입력 메소드
 //		
-//			String answer1 = "";
-//			String answer2 = "";
-//			
-//			System.out.println("1번문제) 아기화장품은 순해서 어른들이 사용해도 괜찮다? 정답 :");
-//			
-//			answer1 = sc1.next(); 
-//			
-//			if (answer1.equals("X")) { // 스트링타입으로 조건문 if 걸어서 조건식
-//				
-//				System.out.println("2번문제로 넘어갑니다"); 
-//				System.out.println("2번문제) 독사가 자기 혀를 깨물면 죽는다? 정답 : ");
-//				
-//				answer2 = sc1.next();
-//				if (answer2.equals("O")) {
-//					System.out.println("모든 문제를 맞췄습니다. O/X 퀴즈가 종료됩니다.");
-//				} else {
-//					System.out.println("2번문제를 틀렸습니다.");
-//				}
-//			} else {
-//				System.out.println("1번문제를 틀렸습니다.");
-//
-//			}
+			String answer1 = "";
+			String answer2 = "";
+			
+			System.out.println("1번문제) 아기화장품은 순해서 어른들이 사용해도 괜찮다? 정답 :");
+			
+			answer1 = sc1.next(); 
+			
+			if (answer1.equals("X")) { // 스트링타입으로 조건문 if 걸어서 조건식
+				
+				System.out.println("2번문제로 넘어갑니다"); 
+				System.out.println("2번문제) 독사가 자기 혀를 깨물면 죽는다? 정답 : ");
+				
+				answer2 = sc1.next();
+				if (answer2.equals("O")) {
+					System.out.println("모든 문제를 맞췄습니다. O/X 퀴즈가 종료됩니다.");
+				} else {
+					System.out.println("2번문제를 틀렸습니다.");
+				}
+			} else {
+				System.out.println("1번문제를 틀렸습니다.");
+
+			}
 
 //
 //		-------------------------------------------------------------------
@@ -435,25 +435,25 @@ public class Exam02 {
 			// for문2 첫번째 열이 끝났으면 줄바꿈으로 바꿔주면서 5번 반복
 			// for문1 첫번쨰 행이 끝났으면 줄바꿈으로 바꿔주면서 5번 반복
 			
-//			Scanner sc = new Scanner(System.in);		
-//			String name = ""; 							 		
-//			char name1 = ' ';																
-//			
-//			System.out.print("문자열(3문자 이상) 입력: ");	
-//			name = sc.next();							
-//			name1 = name.charAt(2);						
-//									
-//																	
-//			for(int i=0; i<5; i++) {  					
-//			
-//				for(int j=0; j<5; j++) {				
-//					System.out.printf(name1 + " ");		
-//				}
-//				System.out.println();					
-//			}
-//			System.out.println();						
-//			sc.nextLine();
-//			sc.close();
+			Scanner sc = new Scanner(System.in);		
+			String name = ""; 							 		
+			char name1 = ' ';																
+			
+			System.out.print("문자열(3문자 이상) 입력: ");	
+			name = sc.next();							
+			name1 = name.charAt(2);						
+									
+																	
+			for(int i=0; i<5; i++) {  					
+			
+				for(int j=0; j<5; j++) {				
+					System.out.printf(name1 + " ");		
+				}
+				System.out.println();					
+			}
+			System.out.println();						
+			sc.nextLine();
+			sc.close();
 		
 //		1-2(심화) 문자 추출 사각형 생성
 //		      문자열(3문자 이상)을 받아온다

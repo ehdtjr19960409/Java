@@ -14,14 +14,14 @@ public class ArrayTask01 {
 	   // 배열 칸수 100으로 선언
 	   //배열길이로 설정해서 값을 대입하는 반복문
 	   //배열길이로 설정해서 값을 출력하는 반복문
-//	   int[] number = new int[100];
-//	   for(int i = 0; i < number.length; i++) {
-//		   number[99 - i] = i+1;
-//	   }
-//	   for(int i = 0; i<number.length; i++) {
-//		   System.out.print(number[i]); 
-//	   }
-//	   System.out.println();
+	   int[] number = new int[100];
+	   for(int i = 0; i < number.length; i++) {
+		   number[99 - i] = i+1;
+	   }
+	   for(int i = 0; i<number.length; i++) {
+		   System.out.print(number[i]); 
+	   }
+	   System.out.println();
       //2. 1~10까지의 값을 배열에 넣고 총 합 구하기
       //일반 for문만 사용
 	   
