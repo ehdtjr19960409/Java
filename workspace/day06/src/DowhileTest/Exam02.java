@@ -79,7 +79,7 @@ public class Exam02 {
 //			// while이 참이 아닌 거짓일 때 반복문이 실행
 //			// 카운트 값이 나오게끔 출력
 //			
-			Scanner sc = new Scanner(System.in);	
+//			Scanner sc = new Scanner(System.in);	
 			final int ANSWER = 10;					
 			int num = 0;							
 			int cnt = 0;							
@@ -180,7 +180,7 @@ public class Exam02 {
 //			
 //			
 ////			
-		Scanner sc = new Scanner(System.in);						
+//		Scanner sc = new Scanner(System.in);						
 		int input1 = 0,input = 0,  charge = 0, charge1 = 0;		
 		int cola = 2500, sider = 2000, coffee = 4000;		
 		
@@ -241,7 +241,7 @@ public class Exam02 {
 //		// 출력 메소드 생성을 통해 재입력이란 것을 알려줘야한다
 //		// 입력 메소드를 통해 재입력을 받는다
 //
-		Scanner sc = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);
 		int food1 = 5000;
 		int food2 = 8000;
 		int food3 = 25000;
@@ -384,7 +384,7 @@ public class Exam02 {
 //		// 입력 메소드
 //		// 출력메소드 2번문제
 //		// 입력 메소드
-//		
+		Scanner sc1 = new Scanner(System.in);
 			String answer1 = "";
 			String answer2 = "";
 			
@@ -435,7 +435,7 @@ public class Exam02 {
 			// for문2 첫번째 열이 끝났으면 줄바꿈으로 바꿔주면서 5번 반복
 			// for문1 첫번쨰 행이 끝났으면 줄바꿈으로 바꿔주면서 5번 반복
 			
-			Scanner sc = new Scanner(System.in);		
+//			Scanner sc = new Scanner(System.in);		
 			String name = ""; 							 		
 			char name1 = ' ';																
 			
@@ -599,4 +599,4 @@ public class Exam02 {
 		}
 }
 
-}				
+	}}	
