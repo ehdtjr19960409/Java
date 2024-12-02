@@ -97,10 +97,10 @@ public class MethodTask {
 	//해당 클래스 MethodTask mt = new MethodTask(); import
 	//syso getAvg(5개의 정수 넣기)
 	
-	double getAvg() {
+	double getAvg(int[] arr) {
 		int sum =0;
 				
-		int[] arr = new arr[5];
+		
 		for(int i =0; i< arr.length; i++) {
 			
 			sum += arr[i];
