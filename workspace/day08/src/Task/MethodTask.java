@@ -10,8 +10,12 @@ public class MethodTask {
 		System.out.println((mt.printName("신동석",3)));
 		
 		System.out.println((mt.changeNumber(5)));
-		
-	//	System.out.println((mt.getAvg()));
+		System.out.println("=====test====");
+		//System.out.println((mt.getAvg(1,2,3,4,5)));
+		double avg = mt.getAvg(new int[] {20,20,30,40,50});
+		System.out.println(avg);
+		mt.printMinMax(new int[] {2,5,9,4,1});
+		mt.changeNumber(0);
 		
 	}
 		
@@ -97,18 +101,14 @@ public class MethodTask {
 	//해당 클래스 MethodTask mt = new MethodTask(); import
 	//syso getAvg(5개의 정수 넣기)
 	
+	
 	double getAvg(int[] arr) {
-		arr = new int[5];
-		int sum =0;
-				
 		
-		for(int i =0; i< arr.length; i++) {
-			
-			sum += arr[i];
-			
+		int sum = 0;
+		for(int data : arr) {
+			sum+=data;
 		}
-		double avg = sum/arr.length;
-		return avg;
+		return sum/arr.length;
 		
 	}
 	
@@ -120,10 +120,12 @@ public class MethodTask {
 	
 	// 리턴타입 : void
 	// 메소드명 : printMinMax
-	// 매개변수 : int[] ar1
-	// 
+	// 매개변수 : int[] ar1 => 변경사항 정수형으로 받아야함
+	// 값을 모르고 배열의 크기를 모를때
+	//
 	// 최소값 0번째방 기준
 	// 최대값 0번쨰방 기준
+	
 	// for문 배열의 길이만큼 증가시킨다
 	// 최소값0번째 방에 있는 값과 배열 i+1번째 값과 비교 최소값 0번째 방값이 크다면
 	// 최소값 대입
@@ -133,11 +135,27 @@ public class MethodTask {
 	// 해당 클래스 MethodTask mt = new MethodTask(); import
 	// syso(mt.printMinMax(?));
 	
+	void printMinMax(int[] arr1) {
+		
+		int min = arr1[0];
+		int max = arr1[0];
+		
+		for(int i= 0; i < arr1.length; i++) {
+			
+			min = min > arr1[i] ? arr1[i] : min ;
+			max = max < arr1[i] ? arr1[i] : max;
+		}
+		System.out.println("최소 " + min + "최대 " +max);
+		
+	}
+	
+	
 	
     // 6. 소문자는 대문자로, 대문자는 소문자로 바꿔주는 메소드
     // BaNanA -> bAnANa
     // 메소드명 : changeCase
     // 매개변수와 리턴값 자유 => 단, 형변환 이용할 것
+	
 	// 리턴타입 : void
 	// 매개변수x
 	// BaNanA를 heap 메모리 참조값에 올리고 stack영역에 char 배열 참조변수명으로 생성한다
