@@ -27,38 +27,66 @@ public class TeamTask03 {
 //로직구성
 // Main		
 // scanner 클래스 import
+// Method 클래스 import
 // string 타입으로 이름  int형으로  날짜 선언 및 초기화
 // 1차원 배열을 생성
+// tellFortune 메소드에 인자값 전달 및 호출		
+		
 		
 // 메소드
 // tellFortune 메소드 생성		
 // 이름의 각자리 -> for문을 활용해서 정수형변환
-// 각 자리수를 더하고 -> 날짜를 더한다
+// + => 문자를 더해도 정수형으로 나온다 -> 전달받은 값의 변수명.charAt(); 사용한다.
+// 각 자리수를 더하고 -> 날짜를 더한다 
 // if문으로 5로 나눴을 때 나머지 결과의 값에 0이면 해당문구 출력 
 // else if문 활용해서 그 그다음 숫자를 이용해 그다음 문구 출력
 	
 	Scanner sc = new Scanner(System.in);
+	TeamTask03 tt = new TeamTask03();
 	
-//	System.out.print("이름과 날짜를 입력 하고 오늘의 운세를 확인해보세요 : ");
-//	String name = sc.next();
-//	int day = sc.nextInt();
-//	int[] arr = new int[3];
-//	
-	int num = 'a';
-	char[] number = {'가', 'b', 'c'};
-	System.out.println(number[0] + number[1]);
+	System.out.print("이름과 날짜를 입력 하고 오늘의 운세를 확인해보세요 : ");
+	String name = sc.next();
+	int day = sc.nextInt();
+	int[] arr = new int[3];
+	tt.tellFortune(name, day, arr);
+	
+	
+//	int num = 'a';
+//	char[] number = {'가', 'b', 'c'};
+//	System.out.println(number[0] + number[1]);
+//		String nameValue = "신동석";
+//		int[] arr1 =  new int[3];
+//		int result = 0;
+
+	
 	}
 	
-	void tellFortune(String nameValue, int dayValue, int[] arr1) {
+	void tellFortune(String nameValue, int dayValue, int[] arr1) { 
 		
 		int changeNum = 0;
 		
 		for(int i = 0; i<arr1.length; i++) {
 				 
-				arr1[i] = nameValue.charAt(i);
-	
+				arr1[i] += nameValue.charAt(i);
+				changeNum += arr1[i];
 		}
-	
+		changeNum += dayValue; 
+		if(changeNum%5==0) {
+			System.out.println("오늘은 행운의 날입니다!");
+			
+		}else if(changeNum%5==1) {
+			System.out.println("약간의 어려움이 있을 수 있어요.");
+			
+		}else if(changeNum%5==2) {
+			System.out.println("평온한 하루가 예상됩니다.");
+			
+		}else if(changeNum%5==3) {
+			System.out.println("모험심을 발휘해보세요!");
+			
+		}else if(changeNum%5==4) {
+			System.out.println("좋은 일이 찾아올 거예요.");
+			
+		}
 		
 	}
 }

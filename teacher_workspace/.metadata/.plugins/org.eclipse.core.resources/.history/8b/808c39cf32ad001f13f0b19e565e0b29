@@ -1,0 +1,16 @@
+package doWhileTest;
+//6번 : 기타 제어문-break문
+public class BreakTest {
+	public static void main(String[] args) {
+		//1~10까지 중 5까지만 출력하기
+		for(int i = 0; i < 10; i++) {
+			if(i == 4) {
+				break;
+			}
+			System.out.println(i + 1);
+			
+		}
+		System.out.println("출력 끝");
+		
+	}
+}

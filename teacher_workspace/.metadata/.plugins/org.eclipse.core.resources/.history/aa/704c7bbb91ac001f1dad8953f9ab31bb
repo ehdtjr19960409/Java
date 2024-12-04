@@ -1,0 +1,10 @@
+package whileTest;
+//13번 : while문
+public class WhileTest01 {
+	public static void main(String[] args) {
+		
+		while(true) {
+			System.out.println("행복하다");
+		}
+	}
+}

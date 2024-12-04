@@ -1,0 +1,10 @@
+package oper;
+//11번 : 관계연산자
+public class OperTest03 {
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 15;
+		
+		System.out.println("num1 > num2 : num1이 num2보다 크니? " + (num1 > num2));
+	}
+}

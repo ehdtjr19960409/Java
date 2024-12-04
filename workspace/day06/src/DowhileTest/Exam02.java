@@ -543,40 +543,40 @@ public class Exam02 {
 		int input1 = 0,input = 0,  charge = 0, charge1 = 0;		
 		int cola = 2500, sider = 2000, coffee = 4000;		
 		
-		System.out.print("금액을 넣어주세요 : ");					
-		input = sc.nextInt();								
-
-		System.out.println("		      1 콜라 : 2500\r\n"	// 메뉴 출력 메소드
-				+ "		      2 사이다 : 2000\r\n"
-				+ "		      3 커피 : 4000\r\n"
-				+ "		      4 잔액반환");
-		if(input<2000) {									
-			System.out.println("잔액부족");
-		}else if(input>2000) {
-			System.out.print("번호 선택 : ");					
-			input1 = sc.nextInt();							
-			if(input1==1) {									
-				charge = input % cola;						
-				charge1 = input/cola;						
-				System.out.printf("콜라가 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge); 
-			}else if(input1==2) {
-				charge = input % sider;
-				charge1 = input/sider;
-				System.out.printf("사이다 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
-			}else if(input1==3) {
-				charge = input % coffee;
-				charge1 = input/coffee;
-				System.out.printf("커피 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
-			}else if(input1==4) {							
-				System.out.printf("잔액반환 :%d ", input);
-			}
-		}
-	
-		if((0>=input1&&input1>5)&&input<2000) {
-			System.out.println("잔액부족");
-		}else if((input1>0&&input1<5)&&input>sider) {
-			
-		}
+//		System.out.print("금액을 넣어주세요 : ");					
+//		input = sc.nextInt();								
+//
+//		System.out.println("		      1 콜라 : 2500\r\n"	// 메뉴 출력 메소드
+//				+ "		      2 사이다 : 2000\r\n"
+//				+ "		      3 커피 : 4000\r\n"
+//				+ "		      4 잔액반환");
+//		if(input<2000) {									
+//			System.out.println("잔액부족");
+//		}else if(input>2000) {
+//			System.out.print("번호 선택 : ");					
+//			input1 = sc.nextInt();							
+//			if(input1==1) {									
+//				charge = input % cola;						
+//				charge1 = input/cola;						
+//				System.out.printf("콜라가 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge); 
+//			}else if(input1==2) {
+//				charge = input % sider;
+//				charge1 = input/sider;
+//				System.out.printf("사이다 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
+//			}else if(input1==3) {
+//				charge = input % coffee;
+//				charge1 = input/coffee;
+//				System.out.printf("커피 %d개 나왔습니다 거스름 돈 %d원입니다. ", charge1, charge);
+//			}else if(input1==4) {							
+//				System.out.printf("잔액반환 :%d ", input);
+//			}
+//		}
+//	
+//		if((0>=input1&&input1>5)&&input<2000) {
+//			System.out.println("잔액부족");
+//		}else if((input1>0&&input1<5)&&input>sider) {
+//			
+//		}
 ////			
 ////		---------------------------------------------------------------
 ////		JAVA요
@@ -695,21 +695,21 @@ public class Exam02 {
 //					//break문 통해 한번에맞췄기 때문에 for문 종료 후 정답입니다 출력 메소드 생성
 //					
 //					
-		final int NUM = 27;
-		
-		int num2 = 0;
-		for (int i = 0; i < 3; i++) {  
-			System.out.print("얼마? : "); 
-			num2 = sc.nextInt();		
-			if (num2 == NUM) {			
-				System.out.println("정답");	
-				break;					
-			} else if (num2 > NUM) {	
-				System.out.println("다운");	
-			} else {						
-				System.out.println("업");
-			}
-		}
+//		final int NUM = 27;
+//		
+//		int num2 = 0;
+//		for (int i = 0; i < 3; i++) {  
+//			System.out.print("얼마? : "); 
+//			num2 = sc.nextInt();		
+//			if (num2 == NUM) {			
+//				System.out.println("정답");	
+//				break;					
+//			} else if (num2 > NUM) {	
+//				System.out.println("다운");	
+//			} else {						
+//				System.out.println("업");
+//			}
+//		}
 
 
 
@@ -795,24 +795,24 @@ public class Exam02 {
 			// for문1 첫번쨰 행이 끝났으면 줄바꿈으로 바꿔주면서 5번 반복
 			
 //			Scanner sc = new Scanner(System.in);		
-			String name = ""; 							 		
-			char name1 = ' ';																
-			
-			System.out.print("문자열(3문자 이상) 입력: ");	
-			name = sc.next();							
-			name1 = name.charAt(2);						
-									
-																	
-			for(int i=0; i<5; i++) {  					
-			
-				for(int j=0; j<5; j++) {				
-					System.out.printf(name1 + " ");		
-				}
-				System.out.println();					
-			}
-			System.out.println();						
-			sc.nextLine();
-			sc.close();
+//			String name = ""; 							 		
+//			char name1 = ' ';																
+//			
+//			System.out.print("문자열(3문자 이상) 입력: ");	
+//			name = sc.next();							
+//			name1 = name.charAt(2);						
+//									
+//																	
+//			for(int i=0; i<5; i++) {  					
+//			
+//				for(int j=0; j<5; j++) {				
+//					System.out.printf(name1 + " ");		
+//				}
+//				System.out.println();					
+//			}
+//			System.out.println();						
+//			sc.nextLine();
+//			sc.close();
 		
 //		1-2(심화) 문자 추출 사각형 생성
 //		      문자열(3문자 이상)을 받아온다

@@ -1,0 +1,14 @@
+package print;
+//9번 : 서식문자의 옵션(printf)
+
+public class PrintTest03 {
+	public static void main(String[] args) {
+		System.out.println("==============================");
+		//기본 형식 지정자
+		System.out.printf("%s %s", "hello", true);
+		System.out.printf("\n%d %f", 2024, 11.123456);
+		System.out.printf("\n%c", 'a');
+		System.out.println("\n==============================");
+		
+	}
+}
