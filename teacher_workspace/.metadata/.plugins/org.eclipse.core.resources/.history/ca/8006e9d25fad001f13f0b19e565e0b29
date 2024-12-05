@@ -1,0 +1,9 @@
+package team;
+
+import java.util.Scanner;
+
+public class Team05 {
+	public static void main(String[] args) {
+
+	}
+}

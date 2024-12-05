@@ -1,0 +1,5 @@
+package oper;
+// 4번 : 비트연산자를 이용한 암호화와 복호화
+public class BitEncryption {
+
+}
