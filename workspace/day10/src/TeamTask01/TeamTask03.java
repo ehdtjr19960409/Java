@@ -67,11 +67,10 @@ public class TeamTask03 {
 		
 		for(int i = 0; i<arr1.length; i++) {
 				 
-<<<<<<< HEAD
 				arr1[i] = nameValue.charAt(i);
-=======
+
 				arr1[i] += nameValue.charAt(i);
->>>>>>> 50c1443e4b755a2e44760edd0181189062c437b7
+
 				changeNum += arr1[i];
 		}
 		changeNum += dayValue; 

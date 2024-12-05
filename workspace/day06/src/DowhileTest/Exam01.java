@@ -2,7 +2,7 @@ package DowhileTest;
 
 import java.util.Scanner;
 
-public class Exam02 {
+public class Exam01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 //////		공백(0100)  

@@ -16,17 +16,16 @@ public class Animal {
 	// 생성자 생각해보기
 	// 집가서 복습하고 만들어보기
 	
+	//모든 필드내에 매개변수를 받는 생성자
+	public Animal(String name, int age, String type) {
+		
+		this.name=name;
+		this.age=age;
+		this.type=type;
+		
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 //	 메서드(행동)
 //	    - 밥먹기() : 동물이 밥을 먹는 행동을 하는 메서드
 		void eat() {
@@ -49,7 +48,7 @@ public class Animal {
 		void birthDay() {
 			System.out.println(this.type + " 생일축하해");
 		}
-//
+
 
 	
 }

@@ -1,7 +1,56 @@
 package tvTask;
 
+import java.util.Scanner;
+
 public class TvController {
 	
+	public static void main(String[] args) {
+		
+		//로직
+		// 프로그램 사용자 입력 -> scanner 클래스 사용
+		// 메소드 호출 -> 메소드 클래스 사용
+		// main에서 색상 크기 가격 초기값 넣기, BasicTV에서 객체 생성
+		// TV 컨트롤 메뉴 -> While문으로 참일 때 즉, 전원이 켜진상태에서 진행
+		//if문으로 1눌렀을 때 전원 on / off를 사용
+		// 1 눌렀을 때 전원on -> BasicTv powerOnOff() 호출
+		// 2 채널 증가하면서 채널번호 출력 -> void channelUp() 호출
+		// 3 채널 내리기는 기존 값에서 내린 값을 출력 -> channelDown() 호출
+		// 4 자체 프로그램 종료->  출력문사용
+		
+		// =================이해가 안가는 부분=================================
+		// ? on 상태를 off 상태로 변경방법 ->  off기능을 분리해야한다고 생각했는데..흠..
+		// ? off가 선행되었을 때 -> 채널 up/down "TV 전원을 먼저 켜주세요." 메시지 출력(선행x)
+		Scanner sc = new Scanner(System.in);
+		BasicTv tv = new BasicTv();
+		
+		
+		tv.color = "Black";
+		tv.size = 32;
+		tv.price = 500000;
+		
+		
+		while(!(tv.power)) {
+			tv.printInfo();
+			int num = sc.nextInt();
+			if(num == 1) {
+				tv.powerOnOff();		
+			}else if(num == 2) {
+				tv.channelUp();
+			}else if(num == 3) {
+				tv.channelDown();
+			}else if(num==4) {
+				System.out.println("프로그램 종료합니다.");
+				break;
+			}
+				
+			System.out.println(" ");
+		}
+		if(tv.power) {
+			tv.channelUp();
+		}
+		
+		
+	}
 }
 //3. BasicTv 클래스와 함께 동작하는 TvController 프로그램을 작성하세요
 //프로그램은 사용자로부터 명령을 입력받아 TV를 제어한다
@@ -25,4 +74,4 @@ public class TvController {
 //그 외 : 프로그램을 종료하고 "프로그램을 종료합니다." 메시지 출력
 
 
-// 
+
