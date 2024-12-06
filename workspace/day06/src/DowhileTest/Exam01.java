@@ -475,7 +475,8 @@ public class Exam01 {
 				cnt++;								
 			}while(!(num==ANSWER));					
 				System.out.printf(" %d번째에 맞혔습니다!",cnt);	
-				}
+	}
+}
 //		
 ////		1-2(심화) 문자 추출 사각형 생성
 ////		      문자열(3문자 이상)을 받아온다
@@ -540,8 +541,8 @@ public class Exam01 {
 ////			
 
 //		Scanner sc = new Scanner(System.in);						
-		int input1 = 0,input = 0,  charge = 0, charge1 = 0;		
-		int cola = 2500, sider = 2000, coffee = 4000;		
+//		int input1 = 0,input = 0,  charge = 0, charge1 = 0;		
+//		int cola = 2500, sider = 2000, coffee = 4000;		
 		
 //		System.out.print("금액을 넣어주세요 : ");					
 //		input = sc.nextInt();								
@@ -600,32 +601,33 @@ public class Exam01 {
 //		// 출력 메소드 생성을 통해 재입력이란 것을 알려줘야한다
 //		// 입력 메소드를 통해 재입력을 받는다
 //
-		Scanner sc = new Scanner(System.in);
-		int food1 = 5000;
-		int food2 = 8000;
-		int food3 = 25000;
-		int food4 = 6000;
-		String menu = null;
-
-		System.out.println("점심 메뉴 : 짜장, 돈까스, 피자, 햄버거");
-		menu = sc.next(); // 김치
-
-		while (!("짜장".equals(menu) || "돈까스".equals(menu) || "피자".equals(menu) || "햄버거".equals(menu))) { // 거짓일시 재입력을
-																										// 실행시키위한 논리연산
-																										// 진행
-			System.out.println("재입력 : ");
-			menu = sc.next();
-		}
-		if ("짜장".equals(menu)) {
-			System.out.println(menu + ":" + food1);
-		} else if ("돈까스".equals(menu)) {
-			System.out.println(menu + ":" + food2);
-		} else if ("피자".equals(menu)) {
-			System.out.println(menu + ":" + food3);
-		} else if ("햄버거".equals(menu)) {
-			System.out.println(menu + ":" + food4);
-		}
-		System.out.println("메뉴가 정상적으로 선택됐었습니다.");
+//		Scanner sc = new Scanner(System.in);
+//		int food1 = 5000;
+//		int food2 = 8000;
+//		int food3 = 25000;
+//		int food4 = 6000;
+//		String menu = null;
+//
+//		System.out.println("점심 메뉴 : 짜장, 돈까스, 피자, 햄버거");
+//		menu = sc.next(); // 김치
+//
+//		while (!("짜장".equals(menu) || "돈까스".equals(menu) || "피자".equals(menu) || "햄버거".equals(menu))) { // 거짓일시 재입력을
+//																										// 실행시키위한 논리연산
+//																										// 진행
+//			System.out.println("재입력 : ");
+//			menu = sc.next();
+//	
+//		if ("짜장".equals(menu)) {
+//			System.out.println(menu + ":" + food1);
+//		} else if ("돈까스".equals(menu)) {
+//			System.out.println(menu + ":" + food2);
+//		} else if ("피자".equals(menu)) {
+//			System.out.println(menu + ":" + food3);
+//		} else if ("햄버거".equals(menu)) {
+//			System.out.println(menu + ":" + food4);
+//		}
+//		
+//		System.out.println("메뉴가 정상적으로 선택됐었습니다.");
 //		
 ////
 ////		문제 2 : 문자의 아스키코드 값 확인
@@ -643,19 +645,19 @@ public class Exam01 {
 //				// 이제 사용자가 A라는 문자를 통해 반복문을 탈출했다면 출력메시지를 통해 입력이 끝났다는 것 을 출력
 //
 //		      Scanner sc = new Scanner(System.in);
-				System.out.println("A의 아스키코드는 65입니다");
-				System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
-				String ch1 = sc.next();
-				char ch2 = ch1.charAt(0);
-				int num1 = (int) ch2;
-
-				while (ch2 != 'A') {
-					System.out.println("입력하신 문자" + ch2 + "의 아스키 코드는 : " + num1);
-					System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
-					ch1 = sc.next();
-					ch2 = ch1.charAt(0);
-					num1 = (int) ch2;
-				}
+//				System.out.println("A의 아스키코드는 65입니다");
+//				System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
+//				String ch1 = sc.next();
+//				char ch2 = ch1.charAt(0);
+//				int num1 = (int) ch2;
+//
+//				while (ch2 != 'A') {
+//					System.out.println("입력하신 문자" + ch2 + "의 아스키 코드는 : " + num1);
+//					System.out.print("아스키 코드를 알고 싶은 문자 입력(A입력시 종료) : ");
+//					ch1 = sc.next();
+//					ch2 = ch1.charAt(0);
+//					num1 = (int) ch2;
+//				}
 //		
 ////
 ////		---------------------------------------------------------------
@@ -743,29 +745,29 @@ public class Exam01 {
 //		// 입력 메소드
 //		// 출력메소드 2번문제
 //		// 입력 메소드
-		Scanner sc1 = new Scanner(System.in);
-			String answer1 = "";
-			String answer2 = "";
-			
-			System.out.println("1번문제) 아기화장품은 순해서 어른들이 사용해도 괜찮다? 정답 :");
-			
-			answer1 = sc1.next(); 
-			
-			if (answer1.equals("X")) { // 스트링타입으로 조건문 if 걸어서 조건식
-				
-				System.out.println("2번문제로 넘어갑니다"); 
-				System.out.println("2번문제) 독사가 자기 혀를 깨물면 죽는다? 정답 : ");
-				
-				answer2 = sc1.next();
-				if (answer2.equals("O")) {
-					System.out.println("모든 문제를 맞췄습니다. O/X 퀴즈가 종료됩니다.");
-				} else {
-					System.out.println("2번문제를 틀렸습니다.");
-				}
-			} else {
-				System.out.println("1번문제를 틀렸습니다.");
-
-			}
+//		Scanner sc1 = new Scanner(System.in);
+//			String answer1 = "";
+//			String answer2 = "";
+//			
+//			System.out.println("1번문제) 아기화장품은 순해서 어른들이 사용해도 괜찮다? 정답 :");
+//			
+//			answer1 = sc1.next(); 
+//			
+//			if (answer1.equals("X")) { // 스트링타입으로 조건문 if 걸어서 조건식
+//				
+//				System.out.println("2번문제로 넘어갑니다"); 
+//				System.out.println("2번문제) 독사가 자기 혀를 깨물면 죽는다? 정답 : ");
+//				
+//				answer2 = sc1.next();
+//				if (answer2.equals("O")) {
+//					System.out.println("모든 문제를 맞췄습니다. O/X 퀴즈가 종료됩니다.");
+//				} else {
+//					System.out.println("2번문제를 틀렸습니다.");
+//				}
+//			} else {
+//				System.out.println("1번문제를 틀렸습니다.");
+//
+//			}
 
 //
 //		-------------------------------------------------------------------
@@ -846,32 +848,32 @@ public class Exam01 {
 		//	입력버퍼 비우기
 		
 //			Scanner sc = new Scanner(System.in);
-			String name3 = ""; 			
-			char name4 = ' ';
-			
-		
-			System.out.print("문자열 (3문자 이상)을 입력 : ");
-			name3 = sc.next();
-			name4 = name3.charAt(2);
-
-			for (int i = 0; i <= 4; i++) {
-				
-				if (i == 0 || i == 4) {
-					for (int j = 0; j <= 4; j++) {
-						System.out.print(name4+" ");
-					}
-
-				}else{
-					System.out.print(name4+" ");
-					for (int k = 0; k <= 4; k++) {
-						
-						System.out.print(" ");
-					}
-					System.out.print(" "+name4);
-					
-				}
-				System.out.println();
-			}
+//			String name3 = ""; 			
+//			char name4 = ' ';
+//			
+//		
+//			System.out.print("문자열 (3문자 이상)을 입력 : ");
+//			name3 = sc.next();
+//			name4 = name3.charAt(2);
+//
+//			for (int i = 0; i <= 4; i++) {
+//				
+//				if (i == 0 || i == 4) {
+//					for (int j = 0; j <= 4; j++) {
+//						System.out.print(name4+" ");
+//					}
+//
+//				}else{
+//					System.out.print(name4+" ");
+//					for (int k = 0; k <= 4; k++) {
+//						
+//						System.out.print(" ");
+//					}
+//					System.out.print(" "+name4);
+//					
+//				}
+//				System.out.println();
+//			}
 		//sc.nextLine();
 			
 
@@ -986,39 +988,39 @@ public class Exam01 {
 			//		평균 성적 F
 	
 //		Scanner sc = new Scanner(System.in);
-		int a, b, c, result = 0;
-		System.out.print("3과목 점수 입력 : ");
-		a = sc.nextInt();
-		b = sc.nextInt();
-		c = sc.nextInt();
-		
-		result = (a+b+c)/3;
-		
-		if(95<=result&&result<=100) {
-			System.out.print("평균학점 : 4.5\n");
-			System.out.print("평균 성적 : A+\n");
-		}
-		else if(90<=result&&result<=94) {
-			System.out.print("평균학점 : 4.0\n");
-			System.out.print("평균 성적 : A\n");
-		}
-		else if(85<=result&&result<=89) {
-			System.out.print("평균학점 : 3.5\n");
-			System.out.print("평균 성적 : B+\n");
-		}
-		else if(80<=result&&result<=84) {
-			System.out.print("평균학점 : 3.0\n");
-			System.out.print("평균 성적 : B\n");
-		}else if(75<=result&&result<=79) {
-			System.out.print("평균학점 : 2.5\n");
-			System.out.print("평균 성적 : C\n");
-		}else {
-			System.out.print("평균학점 : 0.0\n");
-			System.out.print("평균 성적 : F\n");
-			}
-				
-
-		}
-
-	}
-
+//		int a, b, c, result = 0;
+//		System.out.print("3과목 점수 입력 : ");
+//		a = sc.nextInt();
+//		b = sc.nextInt();
+//		c = sc.nextInt();
+//		
+//		result = (a+b+c)/3;
+//		
+//		if(95<=result&&result<=100) {
+//			System.out.print("평균학점 : 4.5\n");
+//			System.out.print("평균 성적 : A+\n");
+//		}
+//		else if(90<=result&&result<=94) {
+//			System.out.print("평균학점 : 4.0\n");
+//			System.out.print("평균 성적 : A\n");
+//		}
+//		else if(85<=result&&result<=89) {
+//			System.out.print("평균학점 : 3.5\n");
+//			System.out.print("평균 성적 : B+\n");
+//		}
+//		else if(80<=result&&result<=84) {
+//			System.out.print("평균학점 : 3.0\n");
+//			System.out.print("평균 성적 : B\n");
+//		}else if(75<=result&&result<=79) {
+//			System.out.print("평균학점 : 2.5\n");
+//			System.out.print("평균 성적 : C\n");
+//		}else {
+//			System.out.print("평균학점 : 0.0\n");
+//			System.out.print("평균 성적 : F\n");
+//			}
+//				
+//
+//		}
+//
+//}
+//}

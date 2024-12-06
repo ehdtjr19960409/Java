@@ -28,28 +28,24 @@ public class TvController {
 		tv.size = 32;
 		tv.price = 500000;
 		
-		
-		while(!(tv.power)) {
+//		if(!(tv.power)) {
+		while (true) {
 			tv.printInfo();
 			int num = sc.nextInt();
-			if(num == 1) {
-				tv.powerOnOff();		
-			}else if(num == 2) {
+			if (num == 1) {
+				tv.powerOnOff();
+
+			} else if (num == 2) {
 				tv.channelUp();
-			}else if(num == 3) {
+			} else if (num == 3) {
 				tv.channelDown();
-			}else if(num==4) {
+			} else {
 				System.out.println("프로그램 종료합니다.");
 				break;
 			}
-				
 			System.out.println(" ");
 		}
-		if(tv.power) {
-			tv.channelUp();
-		}
-		
-		
+// 		}else {tv.printInfo();}
 	}
 }
 //3. BasicTv 클래스와 함께 동작하는 TvController 프로그램을 작성하세요
@@ -73,5 +69,6 @@ public class TvController {
 //3 : TV 전원이 켜져 있으면 channelDown() 메서드를 호출하고, "현재 채널: [채널 번호]"를 출력합니다. 꺼져 있으면 "TV 전원을 먼저 켜주세요." 메시지 출력
 //그 외 : 프로그램을 종료하고 "프로그램을 종료합니다." 메시지 출력
 
-
+//+ Off 기능 추가 BasicTv클래스에 기능 추가 -> while문안에서 1을 다시 눌렀을 때 off ? 
+//+ 꺼져 있으면 "TV 전원을 먼저 켜주세요." 메시지 출력 추가 -> off일 때
 
