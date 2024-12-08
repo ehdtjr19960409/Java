@@ -7,7 +7,7 @@ public class StudentMain {
 
 		Student st1 = new Student();
 		Student st2 = new Student();
-
+		
 		System.out.println(st1);
 		System.out.println(st2);
 		System.out.println(st1.name);

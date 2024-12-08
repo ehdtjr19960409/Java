@@ -1,7 +1,7 @@
 package constantTest;
 
 public class EnumTest {
-   enum Day {
+   enum Day { 
       SUNDAY(false), MONDAY(true), TUESDAY(true), THURSDAY(true), FRIDAY(true), SATURDAY(false);
 
       // 필드

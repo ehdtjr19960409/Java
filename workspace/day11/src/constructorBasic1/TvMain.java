@@ -17,7 +17,7 @@ public class TvMain {
 //      myTv2.color = "black";
 //      myTv2.ch = 5;
 //      myTv2.vol = 10;
-      
+ 
       System.out.println(myTv1 +" TV를 조작합니다");
       System.out.println(myTv2 +" TV를 조작합니다");
       System.out.println(myTv1.power);

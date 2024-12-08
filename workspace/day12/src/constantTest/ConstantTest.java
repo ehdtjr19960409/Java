@@ -13,7 +13,7 @@ public class ConstantTest {
 		System.out.println(ConstantTest.MAX_LENGTH);
 		ConstantTest ct = new ConstantTest();
 		System.out.println(ct.PI);
-		//System.out.println(new ConstantTest().PI);
+		System.out.println(new ConstantTest().PI);
 		
 	}
 }
