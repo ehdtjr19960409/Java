@@ -1,6 +1,6 @@
 package task03;
 
-public class task03 {
+public class main {
 	
 //	3) 잔액확인 프로그램
 //	SavingsAccount와 CheckingAccount 클래스는 Account 클래스 상속
