@@ -15,6 +15,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\web_0900_sds\java\workspace\day12\src\task03"/>
+			<item value="D:\web_0900_sds\java\workspace\day12\src\task02"/>
+			<item value="D:\web_0900_sds\java\workspace\day12\src\task01"/>
 			<item value="D:\web_0900_sds\java\workspace"/>
 			<item value="D:\web_0900_sds\java\teacher_workspace"/>
 			<item value="D:\web_0900_sds\java\teacher_workspace\t_day08"/>

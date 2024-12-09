@@ -35,27 +35,25 @@ public class Main {
 	// 메소드2 ->  if문으로 학점 구분(boolean 타입 반환)
 	
 	
+	//=========================================
 	
 	public static void main(String[] args) {
-			
-			Main mm = new Main();
-			
-			Scanner sc = new Scanner(System.in);
-			
-			System.out.println("학생1의 java, dbms 순으로 점수 입력 : ");
-			int score1 = sc.nextInt();
-			int score2 = sc.nextInt();
-			System.out.println("학생2의 java, dbms 순으로 점수 입력 : ");
-			int score3 = sc.nextInt();
-			int score4 = sc.nextInt();
 		
-			System.out.println(mm.score1(9,9,9,9));
-			System.out.println(mm.score2());
-			
-			System.out.println(mm.score3());
-			System.out.println(mm.score4());
-			
+		//6번 객체 생성 및 주소값 출력
+		Student st1 = new Student("짱구", 80, 90);
+		Student st2 = new Student("철수", 99 ,75);
+		
+		System.out.println(st1);
+		System.out.println(st2);
+		
+		
+		//7번 값을 출력
+		System.out.println(st1.toatalScore);
+		System.out.println(st2.toatalScore);
+		
+		//8번 boolean isPass 메소드 호출하고 삼항연산자로 Pass fail 결과값 출력
+		//Integer.ParseInt(st1.isPass) 시 오류 발생
+		System.out.println(st1.isPass((st1.javaScore + st1.dbmsScore)/2) ? "Pass" : "Fail");
 	}
-
 	
 }

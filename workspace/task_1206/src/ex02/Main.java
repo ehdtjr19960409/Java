@@ -1,4 +1,7 @@
 package ex02;
+
+import java.util.Scanner;
+
 //신동석
 public class Main {
 	public static void main(String[] args) {
@@ -24,6 +27,54 @@ public class Main {
 		// 배열의 길이만큼 나눈다 -> 평균
 		
 		//최고점수는 배열의 방번호를 삼항연산자를 통해? 
+//==================================================================
+		
+		//하나로 만드는 방식
+		
+		//1번 학생숭와 점수 저장할 배열 선언
+		//입력클래스 import
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("학생의 수 입력 : ");
+		int stu = sc.nextInt();
+		int[] studentCount = new int[stu];
+		
+		//2번 점수입력
+		System.out.println("학생 점수 입력 : ");
+		for(int i = 0; i < stu; i++) {
+			System.out.println((i+1) + "학생의 점수 : ");
+			studentCount[i] = sc.nextInt();
+	
+		}
+		
+		//3번 총합 계산 //메소드
+		int total = 0;
+		for(int score : studentCount) {
+			total += score;
+
+		}
+		
+		
+		//4번 평균계산 //메소드
+		double avg = (double)total /stu;
+		
+		
+		//5번 최고점수와 해당 인덱스 계산 //메소드
+		int maxScore = studentCount[0];
+		int maxIndex = 0;
+		for(int i = 1; i < studentCount.length; i++) {
+			if(studentCount[i] > maxScore) {
+				
+				maxScore = studentCount[i];
+				maxIndex = i;
+			}
+		}
+		//메소드로 나뉜다
+		System.out.println("결과");
+		System.out.println("총합 : " + total);
+		System.out.println("평균 : " + avg);
+		System.out.println("최고점수 : " + maxScore + ", 인덱스번호 : " + maxIndex);
+		
 		
 		
 		
