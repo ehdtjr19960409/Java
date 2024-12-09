@@ -8,9 +8,8 @@ public class Employee {
 	int salary;
 	
 //	calculateBonus() : 기본적으로 salary * 0.1 반환
-	double calculateBonus(String name, int salary) {
-		this.name = name;
-		this.salary = salary;
+	public calculateBonus(String name, int salary) {
+	
 		return salary * 0.1;
 		
 	}
