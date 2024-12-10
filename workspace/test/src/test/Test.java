@@ -60,15 +60,13 @@ public class Test {
 		
 		//정수 초기화 선언 -> 각 수의 합을 더하기 위해
 		int j = 0;
+		int count = 0;
 		for (int i = 1; i <= 100; i++) {
 			if (i % 3 == 0 || i % 5 == 0) {
-				if (i % 12 == 0  ) {
+					count++;
+				if (count%5 == 1) {
 					System.out.println(" ");
-					
 				}System.out.printf("%d\t", i);
-				
-				
-				
 			}
 			j+=i;
 			
