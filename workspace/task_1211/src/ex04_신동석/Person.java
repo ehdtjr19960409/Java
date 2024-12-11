@@ -4,7 +4,7 @@ public class Person {
 	//필드(private) : String name(학생이름)
 	private String name;
 	
-	//생성자 : 이름ㅇ르 매개변수로 받아 초기화
+	//생성자 : 이름 매개변수로 받아 초기화  
 	public Person(String name) {
 	
 		this.name = name;
@@ -15,12 +15,4 @@ public class Person {
 		return name;
 	}
 
-	
-	
-
-	
-	
-	
-
-	
 }
