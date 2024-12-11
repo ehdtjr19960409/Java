@@ -8,4 +8,6 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="review02.Main"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="innerTest.Outer.Inner"/>
+    <fullyQualifiedTypeName name="lamda2.FunctionalInter2"/>
 </qualifiedTypeNameHistroy>

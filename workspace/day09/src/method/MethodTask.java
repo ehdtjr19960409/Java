@@ -14,7 +14,7 @@ public class MethodTask {
 
 		mt.twoArray(row, col);
 	}
-
+	
 	// 문제 배운 내용을 토대로 작성
 
 	// 입력받은 정수로 2차원 배열을 만들고, 마지막칸에는 입력받은 숫자가 곱해져서 나와야한다

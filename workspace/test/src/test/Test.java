@@ -63,10 +63,11 @@ public class Test {
 		int count = 0;
 		for (int i = 1; i <= 100; i++) {
 			if (i % 3 == 0 || i % 5 == 0) {
+				System.out.printf("%d\t", i);
 					count++;
-				if (count%5 == 1) {
+				if ((count%5) == 0) {
 					System.out.println(" ");
-				}System.out.printf("%d\t", i);
+				}
 			}
 			j+=i;
 			
