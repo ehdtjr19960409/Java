@@ -27,6 +27,17 @@ public class ExceptionTest01 {
 		int num;
 		try {
 			num = sc.nextInt();
+			
+			if (num >= 1) {
+
+				for (int i = 1; i <= num; i++) {
+					total += i;
+				}
+				System.out.println("총합 : " + total);
+
+			}
+			
+			
 		} catch (InputMismatchException e) {
 			System.out.print(e.toString());
 			
@@ -38,20 +49,13 @@ public class ExceptionTest01 {
 			e.printStackTrace();
 		}
 
-//		if (num >= 1) {
-//
-//			for (int i = 1; i <= num; i++) {
-//				total += i;
-//			}
-//			System.out.println("총합 : " + total);
-//
-//		}else {
+		
 //			try {
 //				// 여기가 키워드 -> 예외가 예상되는 코드 즉, 입력받은 값이 정수값이 아닐때
 //
 //					throw new TestException01();
 //				
-//			} catch (TestException01 e) {
+//			} catch (InputMismatchException e) {
 //				// TODO Auto-generated catch block
 //				System.out.println("잘못된 입력 입니다 " );
 //			}
@@ -60,3 +64,4 @@ public class ExceptionTest01 {
 
 	}
 }
+
