@@ -34,6 +34,9 @@ class ClassC implements InterfaceA, InterfaceB {
 
 public class InterfaceMain {
    public static void main(String[] args) {
-
+	   ClassC c = new ClassC();
+	   c.method();
+	   c.methodA();
+	   c.methodB();
    }
 }

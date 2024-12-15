@@ -2,8 +2,8 @@ package casting3;
 //7번 : 캐스팅의 특징
 public class CastingTest2 {
  public static void main(String[] args) {
-//    Animal animal = new Animal();
-//    animal.crying();
+  // Animal animal = new Animal();
+ // animal.crying();
 
 //    Animal animal2 = new Dog(); // 업캐스팅
 
