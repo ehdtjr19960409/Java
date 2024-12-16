@@ -6,8 +6,9 @@ public class CastingTest {
 		//각각 클래스 객체
 		Tv tv = new Tv();
 		System.out.println(tv);
-		tv.chUp(); //부모 객체의 값은 자식 클래스에 있는 멤버사용 불가능
 		
+		tv.chUp(); //부모 객체의 값은 자식 클래스에 있는 멤버사용 불가능
+		System.out.println("====");
 		
 		
 		SmartTv smartTv = new SmartTv();
@@ -25,7 +26,7 @@ public class CastingTest {
 		Tv tv1 = (Tv)new SmartTv(); //부모타입의 객체 자식의 참조값을 대입
 		System.out.println(tv1);
 		//tv1.netflix();
-		System.out.println("====");
+		System.out.println("===");
 		//방법2.
 		Tv tv2 = (Tv)smartTv; 
 		//tv2는 SmartTv 객체를 참조하지만 업캐스팅으로 인해 Tv 타입으로 취급된다

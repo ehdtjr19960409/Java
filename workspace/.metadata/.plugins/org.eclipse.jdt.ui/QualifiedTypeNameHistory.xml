@@ -16,8 +16,12 @@
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+=======
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+>>>>>>> 1c69be43197a8476b6bb7bcae03ba6f7ea9e944f
 </qualifiedTypeNameHistroy>
