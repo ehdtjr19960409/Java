@@ -24,7 +24,7 @@ public class ExceptionTest01 {
 		System.out.println("프로그램 시작");
 		System.out.print("숫자 입력(하면 그 수까지까지의 더한 값이 출력됌) : ");
 		Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD
+
 		int num = sc.nextInt();
 		
 		if (num >= 1) {
@@ -44,18 +44,18 @@ public class ExceptionTest01 {
 				// TODO Auto-generated catch block
 				System.out.println("잘못된 입력 입니다 " );
 			}
-=======
-		int num;
-		try {
-			num = sc.nextInt();
-			
-			if (num >= 1) {
 
-				for (int i = 1; i <= num; i++) {
+		int num01;
+		try {
+			num01 = sc.nextInt();
+			
+			if (num01 >= 1) {
+
+				for (int i = 1; i <= num01; i++) {
 					total += i;
 				}
 				System.out.println("총합 : " + total);
->>>>>>> 1c69be43197a8476b6bb7bcae03ba6f7ea9e944f
+
 
 			}
 			
@@ -84,11 +84,10 @@ public class ExceptionTest01 {
 //
 		System.out.println("프로그램 종료");
 
-<<<<<<< HEAD
+
 	}}
 
-=======
-	}
->>>>>>> 1c69be43197a8476b6bb7bcae03ba6f7ea9e944f
-}
 
+	
+
+}
