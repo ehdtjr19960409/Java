@@ -91,3 +91,5 @@ org.eclipse.core.runtime.CoreException: Launch configuration Test references non
 2024-12-13 18:00:29,509 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 >>>>>>> 1c69be43197a8476b6bb7bcae03ba6f7ea9e944f
 2025-01-02 11:37:06,805 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-03 16:13:40,872 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-01-03 18:08:49,856 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
