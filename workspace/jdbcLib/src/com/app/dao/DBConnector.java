@@ -1,0 +1,27 @@
+package com.app.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBConnector {
+	public static Connection getConnection() {
+		Connection connection = null;
+		
+		String url = "jdbc:oracle:thin:@localhost:1521:XE";
+		String userName = "test";
+		String password = "1234";
+		
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			connection = DriverManager.getConnection(url,userName,password);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("드라이버 연결 실패");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("연결 오류");
+		}
+		return connection;
+	}
+}

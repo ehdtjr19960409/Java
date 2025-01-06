@@ -2,7 +2,9 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="threadTest.myThread"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-    <fullyQualifiedTypeName name="com.app.dao.DBConnector"/>
     <fullyQualifiedTypeName name="com.app.domain.UserDTO"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="com.app.dao.DBConnector"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
 </qualifiedTypeNameHistroy>
